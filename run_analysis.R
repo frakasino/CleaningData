@@ -39,3 +39,5 @@ fulldata2$activity <- factor(fulldata2$activity,
 #Step 4
 newfulldata<-aggregate(fulldata2[, 3:81], 
              list(fulldata2$id, fulldata2$activity ), mean)
+newfulldata <- rename(newfulldata, c("Group.1"="id"))
+newfulldata <- rename(newfulldata, c("Group.2"="Activity"))
