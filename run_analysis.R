@@ -7,7 +7,6 @@ data3<-read.table("./train/X_train.txt")
 data4<-read.table("./train/y_train.txt")
 subject1 <- read.table("./test/subject_test.txt")
 subject2 <- read.table("./train/subject_train.txt")
-subject1 <- read.table("./test/subject_test.txt")
 features <- read.table("features.txt")
 activity <- read.table("activity_labels.txt")
 
